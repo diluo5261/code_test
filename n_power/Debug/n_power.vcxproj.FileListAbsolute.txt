@@ -1,0 +1,2 @@
+E:\CODE\code_store\n_power\Debug\n_power.exe
+E:\CODE\code_store\n_power\Debug\n_power.pdb
