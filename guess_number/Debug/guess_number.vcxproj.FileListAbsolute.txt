@@ -1,0 +1,2 @@
+E:\CODE\guess_number\Debug\guess_number.exe
+E:\CODE\guess_number\Debug\guess_number.pdb
