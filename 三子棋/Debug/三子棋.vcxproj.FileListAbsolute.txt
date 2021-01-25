@@ -1,0 +1,2 @@
+C:\Users\DiLuo\source\repos\三子棋\Debug\三子棋.exe
+C:\Users\DiLuo\source\repos\三子棋\Debug\三子棋.pdb

@@ -1,0 +1,4 @@
+﻿  main.c
+C:\Users\DiLuo\source\repos\三子棋\main.c(31,14): warning C4013: “CompterMove”未定义；假设外部返回 int
+C:\Users\DiLuo\source\repos\三子棋\main.c(52,7): warning C4013: “srand”未定义；假设外部返回 int
+  三子棋.vcxproj -> C:\Users\DiLuo\source\repos\三子棋\Debug\三子棋.exe
