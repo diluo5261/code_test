@@ -1,0 +1,2 @@
+C:\Users\DiLuo\source\repos\fun_arr\Debug\fun_arr.exe
+C:\Users\DiLuo\source\repos\fun_arr\Debug\fun_arr.pdb

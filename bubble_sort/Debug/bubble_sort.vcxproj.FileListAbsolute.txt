@@ -1,0 +1,2 @@
+C:\Users\DiLuo\source\repos\bubble_sort\Debug\bubble_sort.exe
+C:\Users\DiLuo\source\repos\bubble_sort\Debug\bubble_sort.pdb
