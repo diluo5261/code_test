@@ -1,0 +1,9 @@
+﻿  game.c
+E:\CODE\C_code_test\three_chess\game.c(3,21): warning C4028: 形参 1 与声明不同
+E:\CODE\C_code_test\three_chess\game.c(75,11): warning C4013: “rand”未定义；假设外部返回 int
+  main.c
+E:\CODE\C_code_test\three_chess\main.c(13,7): warning C4013: “srand”未定义；假设外部返回 int
+E:\CODE\C_code_test\three_chess\main.c(15,17): warning C4047: “函数”:“char”与“char [3][3]”的间接级别不同
+E:\CODE\C_code_test\three_chess\main.c(15,12): warning C4024: “InitBoard”: 形参和实参 1 的类型不同
+  正在生成代码...
+  three_chess.vcxproj -> E:\CODE\C_code_test\three_chess\Debug\three_chess.exe

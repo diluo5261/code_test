@@ -1,0 +1,2 @@
+E:\CODE\C_code_test\three_chess\Debug\three_chess.exe
+E:\CODE\C_code_test\three_chess\Debug\three_chess.pdb
