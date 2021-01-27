@@ -1,0 +1,2 @@
+E:\CODE\C_code_test\mine_game\Debug\mine_game.exe
+E:\CODE\C_code_test\mine_game\Debug\mine_game.pdb
