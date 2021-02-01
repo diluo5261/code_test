@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pascal_triangle", "pascal_triangle.vcxproj", "{DF37E355-FE47-49E3-945D-4493BF1A09A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF37E355-FE47-49E3-945D-4493BF1A09A3}.Debug|x64.ActiveCfg = Debug|x64
+		{DF37E355-FE47-49E3-945D-4493BF1A09A3}.Debug|x64.Build.0 = Debug|x64
+		{DF37E355-FE47-49E3-945D-4493BF1A09A3}.Debug|x86.ActiveCfg = Debug|Win32
+		{DF37E355-FE47-49E3-945D-4493BF1A09A3}.Debug|x86.Build.0 = Debug|Win32
+		{DF37E355-FE47-49E3-945D-4493BF1A09A3}.Release|x64.ActiveCfg = Release|x64
+		{DF37E355-FE47-49E3-945D-4493BF1A09A3}.Release|x64.Build.0 = Release|x64
+		{DF37E355-FE47-49E3-945D-4493BF1A09A3}.Release|x86.ActiveCfg = Release|Win32
+		{DF37E355-FE47-49E3-945D-4493BF1A09A3}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DEB2E0C3-EBEB-4B85-9C0E-9DAC5E4A7884}
+	EndGlobalSection
+EndGlobal

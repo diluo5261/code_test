@@ -1,0 +1,2 @@
+E:\CODE\C_code_test\murderer\Debug\murderer.exe
+E:\CODE\C_code_test\murderer\Debug\murderer.pdb
