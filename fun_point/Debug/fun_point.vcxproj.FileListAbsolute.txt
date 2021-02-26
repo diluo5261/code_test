@@ -1,0 +1,2 @@
+E:\CODE\C_code_test\fun_point\Debug\fun_point.exe
+E:\CODE\C_code_test\fun_point\Debug\fun_point.pdb
