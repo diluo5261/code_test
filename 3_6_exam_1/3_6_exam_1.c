@@ -1,40 +1,62 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-//求n的阶乘
+struct man
+{
+	char name[30];
+	char sex[10];
+	short age;
+	int tele;
+}p1,*p2;
+
+struct man p3;
+
+struct man p4 = {"zhangsan","male",30,123456789};
+struct man* p5; 
+
 int main()
 {
-	/*int n = 0;
-	scanf("%d",&n);
-	int ret = 1;
-	int sum = 0;
-	int i = 0;
-	for (i = 1; i <= n; i++)
-		ret *= i;
-	printf("%d\n",ret);*/
-
-	int i = 0;
-	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
-	for (i = 0; i <= 12; i++)
-	{
-		arr[i] = 0;
-		printf("hehe\n");
-	}
-
+	p5 = &p4;
+	printf("%s\n",p5->name);
 	return 0;
 }
 
 
 
-
-
-
-
-
-
-
-
-
+////求n的阶乘
+//int main()
+//{
+//	/*int n = 0;
+//	scanf("%d",&n);
+//	int ret = 1;
+//	int sum = 0;
+//	int i = 0;
+//	for (i = 1; i <= n; i++)
+//		ret *= i;
+//	printf("%d\n",ret);*/
+//
+//	int i = 0;
+//	int arr[10] = { 1,2,3,4,5,6,7,8,9,10 };
+//	for (i = 0; i <= 12; i++)
+//	{
+//		arr[i] = 0;
+//		printf("hehe\n");
+//	}
+//
+//	return 0;
+//}
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 ////将一句话进行倒置输出，标点符号不进行倒置
