@@ -1,0 +1,5 @@
+﻿  contact.c
+D:\Document\code\3_17contact_arr\contact.c(98,25): warning C4090: “函数”: 不同的“const”限定符
+  main.c
+  正在生成代码...
+  3_17contact_arr.vcxproj -> D:\Document\code\3_17contact_arr\Debug\3_17contact_arr.exe
