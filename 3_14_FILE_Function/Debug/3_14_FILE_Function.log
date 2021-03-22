@@ -1,0 +1,5 @@
+﻿  test.c
+D:\Document\code\Practice\3_14_FILE_Function\test.c(17,15): warning C4477: “sprintf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“int *”
+D:\Document\code\Practice\3_14_FILE_Function\test.c(91,12): warning C4273: “fclose”: dll 链接不一致
+D:\Windows Kits\10\Include\10.0.19041.0\ucrt\stdio.h(152,26): message : 参见“fclose”的前一个定义
+  3_14_FILE_Function.vcxproj -> D:\Document\code\Practice\3_14_FILE_Function\Debug\3_14_FILE_Function.exe
