@@ -26,6 +26,8 @@ public class InstanceTest {
     public void method(Person person){
         System.out.println(person.getInfo());
 
+//方法一:
+/*
         if (person instanceof Graduate){
             System.out.println("a graduated student");
         }
@@ -35,6 +37,20 @@ public class InstanceTest {
         }
 
         if (person instanceof  Person){
+            System.out.println("a person");
+        }
+
+*/
+
+//方法二:
+if (person instanceof Graduate) {
+            System.out.println("a graduated student");
+            System.out.println("a Student");
+            System.out.println("a person");
+        } else if (person instanceof Student) {
+            System.out.println("a student");
+            System.out.println("a person");
+        }else {
             System.out.println("a person");
         }
     }
