@@ -8,6 +8,10 @@ public class SalariedEmployee extends Employee {
         this.monthlySalary = monthlySalary;
     }
 
+    public void setMonthlySalary(double monthlySalary) {
+        this.monthlySalary = monthlySalary;
+    }
+
     @Override
     public double earnings() {
         return this.monthlySalary;
