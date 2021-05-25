@@ -1,4 +1,4 @@
-package 图书管理系统.book;
+package book;
 
 public class Book {
     private String name;
