@@ -1,0 +1,148 @@
+课件上列出的List方法一定要会
+java中扩容函数都为grow
+
+看源码,看源码的写法,源码的设计思想
+不是看懂每一行代码,抱着理解的态度去看
+
+addAll()只能添加相同类型
+
+迭代器:iterator用来打印集合中的元素
+Iterator <Integer> it = list.iterator;
+while(it.has.Next()){
+    System.out.println(it.next);
+    //it.remove();
+}
+
+
+并没有指向集合元素的开始,指向集合元素的上面,判断下一个是否有元素.,如果想用迭代器打印,必须实现了iterable接口
+
+去查资料了解:it.remove()需要注意的问题
+
+List<Integer> list = new ArrayList<>();
+llist.add(1);
+list.add(2);
+list.add(3);
+System.out.prinln(list);
+
+int x = list.remove(1);//1为下标
+System.out.prinln(x);//打印要移除的元素 --2
+
+Boolean flag = list.remove(list.get(1));
+
+当前的ArrayList的大小是多少
+
+E类型都指的是对象
+int x = list.get(0);
+System.out.prinln(x); // 1
+
+
+set()把下标值更改为
+list.set(1,100);
+System.out.prinln(list); // 1,100,3
+
+
+list.clear();//将所有东西清空
+
+boolean flag = list.contains(1);//是否包含1
+
+
+
+返回第一个O所在的下标
+List<Integer> list = new ArrayList<>();
+llist.add(1);
+list.add(2);
+list.add(3);
+llist.add(1);
+list.add(2);
+list.add(3);
+System.out.prinln(list.indexOf(3); // -->2
+System.out.prinln(list.lastIndexOf(3);// -->5
+
+截取一段
+1.subList(1,4) --> [1,4)
+2.subList并不是截取出来的一个新数组,而是原来的数组
+List <Integer> eList = list.subList(1,4);
+System.out.prinln(elist);
+**************************************
+eList.set(1,133);
+System.out.prinln(list);  //原来的list中的数据也会变为133
+
+
+
+
+ArrayList()可以指定大小也可以不指定
+Arraylist<Integer> list1 = new ArrayList<>();
+Arraylist<Integer> list2 = new ArrayList<>(30);
+Arraylist<Integer> list3 = new ArrayList<>(list1);
+
+
+
+LinkList:底层是一个双向链表,add默认是尾插法
+用途:可以当作栈来用,队列,链表来用,为什么有这么多用途,提供了很多的方法,能够支持这么多数据结构
+LinkList <Integer> linkList = new LinkList<>();
+linkList.addLast(1);
+linkList.add(1,10);//默认是尾插法
+
+
+
+练习题1:有若干学生(学生对象放在一个List中),每个学生有姓名(String) ,年龄(String),和考试成绩(double),遍历list集合,并把每个学生的属性打印出来
+class Student implements Comparable <Student>{
+    private String name;
+    private int age;
+    private double grade;
+    
+    public Student(String name, int age , double grade){
+        this.name = name;
+        this.age = age;
+        this.grade = grade;
+    }
+    
+    get set ff方法
+    
+    toString方法
+    
+   public void CompareTo (Student o){
+       return this.age - o.age;
+   }
+}
+
+public static void main(String [] args){
+    ArrayList <Student> students = new ArrayList<>();
+    students.add(new Student("zhangsan",15,56));
+    students.add(new Student("lisi",16,36));
+    System.out.prinln(students);
+    
+    //对自定义类型进行排序,需要实现接口
+    Collections.sort(students);
+    System.out.prinln(students);
+}
+
+练习二:删除第一个字符当中出现的第二个字符串中的字符
+例:str1 = "welcome to china"   str2 = "come";
+输出结果:wl t china
+String str1 = "welcome to china";
+String str2 = "come";
+ArrayList<Character> List = new ArrayList<>();
+
+for(int i = 0;i<ste1.length();i++){
+    char ch = str1.charAt(i);
+    if(!str2.contains(ch + "")){
+        list.add(ch);
+    }
+}
+
+System.out.prinln(list);
+
+for(int i =0;i<list.size() ; i++ ){
+    System.out.prinln(list.add.get(i));
+}
+
+
+练习题三:有一个List当中存放的整形的数据,要求使用Collections.sort对List进行排序
+ArrayList<Integer> list = new ArrayList<>();
+list.add(1);
+list.add(2);
+list.add(3);
+Collections.sort(list);
+System.out.prinln(list);
+
