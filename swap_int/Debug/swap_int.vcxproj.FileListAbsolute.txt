@@ -1,2 +1,0 @@
-C:\Users\DiLuo\source\repos\swap_int\Debug\swap_int.exe
-C:\Users\DiLuo\source\repos\swap_int\Debug\swap_int.pdb
