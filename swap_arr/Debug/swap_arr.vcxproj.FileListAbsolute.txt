@@ -1,2 +1,0 @@
-C:\Users\DiLuo\source\repos\swap_arr\Debug\swap_arr.exe
-C:\Users\DiLuo\source\repos\swap_arr\Debug\swap_arr.pdb
