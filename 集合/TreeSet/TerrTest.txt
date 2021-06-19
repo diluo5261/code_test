@@ -1,0 +1,32 @@
+ublic class TreeSetTest {
+    public static void main(String[] args) {
+       /* TreeSet<Integer> set1 = new TreeSet<>();
+        set1.add(-1);
+        set1.add(5);
+        set1.add(30);
+        set1.add(10);
+        set1.add(6);
+        set1.add(1);
+        set1.add(11);
+        set1.add(15);
+
+        Iterator<Integer> list1 = set1.iterator();
+        while(list1.hasNext()){
+            System.out.println(list1.next());
+        }*/
+
+        CompareByName c1 = new CompareByName();
+        TreeSet<Person> set2 = new TreeSet<>(c1);
+        set2.add(new Person("张三",15));
+        set2.add(new Person("李四",12));
+        set2.add(new Person("林丹",30));
+        set2.add(new Person("孙杨",25));
+
+
+
+        Iterator<Person> list1 = set2.iterator();
+        while(list1.hasNext()) {
+            System.out.println(list1.next());
+        }
+    }
+}
