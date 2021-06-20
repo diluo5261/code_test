@@ -1,3 +1,0 @@
-﻿  test.c
-C:\Users\DiLuo\source\repos\set question\test.c(5,12): warning C4013: “time”未定义；假设外部返回 int
-  set question.vcxproj -> C:\Users\DiLuo\source\repos\set question\Debug\set question.exe
