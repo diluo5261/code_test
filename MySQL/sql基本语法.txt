@@ -1,0 +1,120 @@
+连自己的服务器
+方式一:
+mysql -uroot -proot
+方式二:
+mysql -uroot -p
+root
+
+mysql -hlocalhost -uroot -P3306 -uroot -proot
+-h  -P  -u 加空格无所谓,密码不能加空格
+
+
+show databases;
+use mysql
+show table;
+
+
+show table from test;
+
+select database();//查看在那个数据库
+
+1.命令不区分大小写
+库名,表明,字段名建议大写
+2.也有注释:
+单行注释: # 或 --空格
+多行注释  /*  */
+
+
+
+
+
+进阶一:基础查询语句"
+语法:
+select  查询列表  from  表明;
+
+特点:
+1.查询的结果集,是一个虚拟表
+2.select 查询列表    类似于System.out.println(打印内容);
+select 后面跟的查询列表,可以有多个部分组成,中间用逗号隔开
+例如:select 字段1 ,字段2,表达式  from 表;
+
+System.out.println(打印内容); 的打印内容只能有一个
+
+3.执行顺序
+select first_name from employee;
+先查询表是否存在,1>from employee;
+2>select first_name
+4.查询列表可以是:字段、表达式、常量、函数
+#一、查询常量
+SELECT 100;
+#二、查询表达式
+SELECT 100 % 3 ;
+
+#三、查询单个字段
+SELECT `last_name` FROM `employee`;
+#四、查询多个字段
+SELECT `last_name` ,`email`,`employee_id`;
+# 五、查询所有字段
+SELECT * FROM `employees`;
+
+#f12 :对齐方式
+SELEECT  
+`last_name`,
+`first_name`,
+`commission_pct`,
+`hiredate`,
+`salary`
+FROM
+employees;
+
+#六、查询函数（调用函数，获取返回值）
+SELECT DATABASE();
+SELECT VERSION();
+SELECT USER();
+
+#七、起别名
+#方式一：使用as关键字
+SELECT USER() As 用户名；
+SELECT USER() As “用户名”；
+SELECT USER() As ‘用户名’；
+
+用户名中间出现空格，等特殊字符必须加“”或‘ ’
+
+#方式二：使用空格
+
+SELECT USER()  用户名；
+SELECT USER()  “用户名”；
+SELECT USER()  ‘用户名’；
+
+#八、
+需求：first_name 和last_name 拼接成全名，最终起别名为：姓 名
+
+方案2:使用concat拼接函数
+SELECT CONCAT(firrst_name ,last_name)  As "姓名";
+
+#ifnull
+SELECT commission_pct  IFNULL(commission_pact,'空') FROM employees;
+
+ifnull(表达式1 ， 表达式2)
+表达式1：可能为null的字段或表达式
+表达式2：如果表达式1为null，则最终结果显示的值
+功能：如果表达式1为null，则显示表达式2，否则显示表达式1
+
+
+java中 + 的作用：
+1、加法的运算
+
+2、拼接符
+
+mysql中+ 的作用：
+1.加法运算
+>两个操作数都是数值型
+>其中一个操作数为字符型，将字符型数据强制转换成数值型 ，如果无法转换，则直接当作0处理      ‘张三’ + 100 ==> 100
+>其中一个操作数为null
+null+ null ==> null
+null + 100 ==> null
+
+
+
+#九 、distinct的使用
+需求：查询员工涉及到的部门有哪些
